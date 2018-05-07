@@ -4,7 +4,7 @@ const webpack = require('webpack');
 module.exports = {
   entry: [ 
     'script-loader!jquery/dist/jquery.min.js',
-    'script-loader!foundation-sites/dist/foundation.min.js',
+    'script-loader!foundation-sites/dist/js/foundation.min.js',
     path.join(__dirname, "app", "app.jsx")],
   output: {
     filename: "bundle.js",
