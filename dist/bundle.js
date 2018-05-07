@@ -773,7 +773,7 @@ var Weather = function (_Component) {
         if (isLoading) {
           return _react2.default.createElement(
             "h3",
-            null,
+            { className: "text-center" },
             "Fetching weather..."
           );
         } else if (temp && location) {
@@ -862,6 +862,11 @@ var WeatherForm = function (_Component) {
           "form",
           { action: "", onSubmit: this.onFormSubmit },
           _react2.default.createElement(
+            "h1",
+            { className: "text-center" },
+            "Get Weather"
+          ),
+          _react2.default.createElement(
             "div",
             null,
             _react2.default.createElement("input", {
@@ -877,7 +882,7 @@ var WeatherForm = function (_Component) {
             null,
             _react2.default.createElement(
               "button",
-              null,
+              { type: "submit", className: "expanded hollow button" },
               "Get Weather"
             )
           )
@@ -919,7 +924,7 @@ var WeatherMessage = function WeatherMessage(_ref) {
 
   return _react2.default.createElement(
     "h3",
-    null,
+    { className: "text-center" },
     "It's it ",
     temp,
     "\xBA in ",

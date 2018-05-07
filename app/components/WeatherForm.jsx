@@ -12,10 +12,10 @@ export default class WeatherForm extends Component {
     }
   };
   render() {
-      
     return (
       <div>
         <form action="" onSubmit={this.onFormSubmit}>
+          <h1 className="text-center">Get Weather</h1>
           <div>
             <input
               placeholder="Enter city"
@@ -24,7 +24,9 @@ export default class WeatherForm extends Component {
             />
           </div>
           <div>
-            <button>Get Weather</button>
+            <button type="submit" className="expanded hollow button">
+              Get Weather
+            </button>
           </div>
         </form>
       </div>
