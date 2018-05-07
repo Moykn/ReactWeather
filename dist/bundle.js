@@ -381,9 +381,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var About = function About(props) {
   return _react2.default.createElement(
-    "h3",
+    "div",
     null,
-    "About Component"
+    _react2.default.createElement(
+      "h3",
+      null,
+      "About Component"
+    ),
+    _react2.default.createElement(
+      "p",
+      null,
+      "Welcome to about page!"
+    )
   );
 };
 
@@ -408,8 +417,6 @@ Object.defineProperty(exports, "__esModule", {
 var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(/*! react-router */ "./node_modules/react-router/es/index.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
