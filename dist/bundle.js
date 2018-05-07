@@ -420,7 +420,7 @@ var Examples = function Examples(props) {
     _react2.default.createElement(
       "h3",
       null,
-      "Examples Component !"
+      "Examples"
     ),
     _react2.default.createElement(
       "p",
