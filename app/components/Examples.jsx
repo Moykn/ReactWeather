@@ -4,6 +4,7 @@ import { Link } from "react-router";
 const Examples = props => (
   <div>
     <h3>Examples Component !</h3>
+    <p>Welcome to examples page!</p>
   </div>
 );
 
