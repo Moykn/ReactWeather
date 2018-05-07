@@ -7,6 +7,11 @@ import Weather from "Weather";
 import About from "About";
 import Examples from "Examples";
 
+//load Foundation
+import 'style-loader!css-loader!foundation-sites/dist/foundation.min.css';
+
+$(document).foundation();
+
 render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
