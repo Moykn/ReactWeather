@@ -393,14 +393,52 @@ var About = function About(props) {
     "div",
     null,
     _react2.default.createElement(
-      "h3",
-      null,
-      "About Component"
+      "h1",
+      { className: "text-center" },
+      "About"
     ),
     _react2.default.createElement(
       "p",
       null,
-      "Welcome to about page!"
+      "This is an applications that searches for temperature of a given place. BE AMAZED!"
+    ),
+    _react2.default.createElement(
+      "p",
+      null,
+      _react2.default.createElement(
+        "strong",
+        null,
+        " RIGHT... NOW!!!"
+      )
+    ),
+    _react2.default.createElement(
+      "p",
+      null,
+      "Some tools used to make this absolutely awesome page:"
+    ),
+    _react2.default.createElement(
+      "ul",
+      null,
+      _react2.default.createElement(
+        "li",
+        null,
+        _react2.default.createElement(
+          "a",
+          { href: "https://facebook.github.io/react" },
+          "React"
+        ),
+        " - This was the currently super hot JavaScript framework used."
+      ),
+      _react2.default.createElement(
+        "li",
+        null,
+        _react2.default.createElement(
+          "a",
+          { href: "http://openweathermap.org" },
+          "Open Weather Map"
+        ),
+        " - Guess from where the info is coming."
+      )
     )
   );
 };
