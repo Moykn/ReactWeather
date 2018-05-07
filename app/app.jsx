@@ -7,8 +7,6 @@ import Weather from "Weather";
 import About from "About";
 import Examples from "Examples";
 
-//http://samples.openweathermap.org/data/2.5/find?q=Philadelphia&units=metric&appid=eb66fc9f929d94ccde159be9c8b3f985
-
 render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
