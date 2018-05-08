@@ -15,11 +15,10 @@ export default class WeatherForm extends Component {
     return (
       <div>
         <form action="" onSubmit={this.onFormSubmit}>
-          <h1 className="text-center">Get Weather</h1>
           <div>
             <input
-              placeholder="Enter city"
-              type="text"
+              placeholder="Search weather by city"
+              type="search"
               ref={node => (this.input = node)}
             />
           </div>

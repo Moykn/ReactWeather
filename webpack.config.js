@@ -49,7 +49,8 @@ module.exports = {
       About: "app/components/About",
       Examples: "app/components/Examples",
       ErrorModal:"app/components/common/ErrorModal",
-      openWeatherMap: "app/api/openWeatherMap"
+      openWeatherMap: "app/api/openWeatherMap",
+      applicationStyles: "app/styles/app"
     },
     extensions: [".json", ".js", ".jsx", ".css"]
   },
