@@ -10,7 +10,7 @@ import Examples from "Examples";
 //load Foundation
 import 'style-loader!css-loader!foundation-sites/dist/css/foundation.min.css';
 import 'style-loader!css-loader!foundation-sites/dist/css/foundation-float.min.css';
-import 'style-loader!css-loader!applicationStyles';
+import 'style-loader!css-loader!sass-loader!applicationStyles';
 
 $(document).foundation();
 

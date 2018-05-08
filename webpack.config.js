@@ -52,7 +52,7 @@ module.exports = {
       openWeatherMap: "app/api/openWeatherMap",
       applicationStyles: "app/styles/app"
     },
-    extensions: [".json", ".js", ".jsx", ".css"]
+    extensions: [".json", ".js", ".jsx", ".css", ".scss"]
   },
   devtool: "source-map",
   devServer: {
