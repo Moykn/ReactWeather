@@ -1,13 +1,20 @@
 import React, { Component } from "react";
 import { Link, IndexLink } from "react-router";
+import { encode } from "punycode";
 
 class Nav extends Component {
+  input;
   constructor(props) {
     super(props);
   }
   onSearch = e => {
     e.preventDefault();
-    alert("Not done yet!");
+    const location = this.input.value;
+    const encodedLocation = encodeURIComponent(location);
+    if (location.length > 0) {
+      this.input.value = "";
+      window.location.hash = `#/?location=${encodedLocation}`;
+    }
   };
   render() {
     return (
@@ -36,7 +43,11 @@ class Nav extends Component {
           <form onSubmit={this.onSearch}>
             <ul className="menu">
               <li>
-                <input type="search" placeholder="Search weather by city" />
+                <input
+                  type="search"
+                  ref={node => (this.input = node)}
+                  placeholder="Search weather by city"
+                />
               </li>
               <li>
                 <button type="submit" className="button">
