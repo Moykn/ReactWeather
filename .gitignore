@@ -22,3 +22,10 @@ yarn-error.log*
 
 # production
 #/dist
+
+.hot-update.js
+*.hot-update.js
+.hot-update.js.map
+*.hot-update.js.map
+.hot-update.json
+*.hot-update.json
