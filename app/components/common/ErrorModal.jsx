@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import ReactDOMServer from "react-dom/server";
 import PropTypes from "prop-types";
 
 export default class ErrorModal extends Component {
@@ -7,16 +9,8 @@ export default class ErrorModal extends Component {
     super(props);
   }
   componentDidMount = () => {
-    const modal = new Foundation.Reveal($("#error-modal"));
-    modal.open();
-  };
-  componentWillUnmount = () =>{
-    debugger;
-    $("#error-modal").close()
-  }
-  render() {
     const { title, message } = this.props;
-    return (
+    var modalMarkup = (
       <div className="reveal tiny text-center" id="error-modal" data-reveal="">
         <h4>{title}</h4>
         <p className="lead">{message}</p>
@@ -27,6 +21,14 @@ export default class ErrorModal extends Component {
         </p>
       </div>
     );
+    const $modal = $(ReactDOMServer.renderToString(modalMarkup));
+    $(ReactDOM.findDOMNode(this)).html($modal);
+    const modal = new Foundation.Reveal($("#error-modal"));
+    modal.open();
+  };
+  componentWillUnmount = () => {};
+  render() {
+    return <div />;
   }
 }
 
